@@ -1,0 +1,139 @@
+/* Общие стили */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Навигационная панель */
+.navbar {
+    background-color: #1e1e1e !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff7f00; /* Цвет ссылок при наведении */
+}
+
+/* Боковая панель */
+.sidebar {
+    background-color: #282828;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list-group-item {
+    border: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #333333;
+}
+
+/* Карточки */
+.card {
+    background-color: #282828;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem; /* Увеличение шрифта */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #aaaaaa;
+}
+
+.btn {
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ff7f00;
+    border-color: #ff7f00;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #ff9933;
+    border-color: #ff9933;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+    color: #ffffff;
+}
+
+.btn-success:hover {
+    background-color: #33cc8c;
+    border-color: #33cc8c;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #ec7063;
+    border-color: #ec7063;
+}
+
+/* Формы */
+.form-control {
+    background-color: #333333;
+    border: 1px solid #555555;
+    color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #ff7f00;
+    box-shadow: 0 0 0 0.25rem rgba(255, 127, 0, 0.25);
+}
+
+/* Подвал */
+footer {
+    background-color: #121212;
+    color: #aaaaaa;
+    font-size: 0.9rem;
+}
+
+/* Дополнительные стили для страниц */
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}

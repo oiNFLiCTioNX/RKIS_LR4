@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Главная{% endblock %}
+{% block content %}
+<h1 class="text-center my-4">Доступные программы</h1>
+
+<div class="row g-4 justify-content-center">
+    {% for product in products %}
+    <div class="col-md-3">
+        <div class="card h-100 border border-secondary shadow-sm rounded-3 overflow-hidden">
+            <img src="{{ product.image_url }}" class="card-img-top" alt="{{ product.title }}">
+            <div class="card-body bg-dark">
+                <h5 class="card-title">{{ product.title }} v{{ product.version }}</h5>
+                <p class="card-text text-muted">{{ product.description[:100] }}...</p>
+                <a href="#" class="btn btn-outline-primary mt-auto w-100 rounded-pill">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
